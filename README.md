@@ -16,38 +16,38 @@ Un atributo debe tener siempre:
 
 HTML, que significa Lenguaje de Marcado de Hipertextos (HyperText Markup Language), es la pieza más básica para la construcción de la web y se usa para definir el sentido y estructura del contenido en una página web. El conjunto mínimo de tags que debe tener toda página son los siguientes:
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Título de la página</title>
-</head>
-<body>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
  …   
-</body>
-</html>
+&lt;/body&gt;
+&lt;/html&gt;
 
 * La declaración DOCTYPE le avisa al browser que el documento que va a leer es HTML.
-* El texto entre <html> y </html> define donde empieza y donde termina el documento HTML.
-* El texto entre <head> y </head> provee información sobre el documento llamada meta data, data sobre la página pero que no forma parte de su contenido visible.
-* El texto entre <title> y </title> provee un título para el documento: lo que aparece escrito en la tab del navegador, y el texto que muestra Google en sus resultados de búsqueda. Google (o el motor de búsqueda que prefiramos) utiliza esta meta data para entender de qué se trata nuestra página y decidir como rankearla (no es el único factor, toma muchísimos más).
-* El texto entre <body> y </body> describe el contenido visible del documento, lo que el navegador le mostrará al usuario. Por ejemplo, podríamos cologar tags <h1> los cuales describen un encabezado, o tags <p> que describen un párrafo.
+* El texto entre &lt;html&gt; y &lt;/html&gt; define donde empieza y donde termina el documento HTML.
+* El texto entre &lt;head&gt; y &lt;/head&gt; provee información sobre el documento llamada meta data, data sobre la página pero que no forma parte de su contenido visible.
+* El texto entre &lt;title&gt; y &lt;/title&gt; provee un título para el documento: lo que aparece escrito en la tab del navegador, y el texto que muestra Google en sus resultados de búsqueda. Google (o el motor de búsqueda que prefiramos) utiliza esta meta data para entender de qué se trata nuestra página y decidir como rankearla (no es el único factor, toma muchísimos más).
+* El texto entre &lt;body&gt; y &lt;/body&gt; describe el contenido visible del documento, lo que el navegador le mostrará al usuario. Por ejemplo, podríamos cologar tags &lt;h1&gt; los cuales describen un encabezado, o tags &lt;p&gt; que describen un párrafo.
 
 
 **3. ¿Cuál es la utilidad e importancia de los enlaces o links entre páginas? ¿Qué significa hipertexto? ¿Un link solo puede apuntar a otra página? ¿Qué importancia tiene esto último?**
 
 Los links son un aspecto fundamental de la web. Al subir contenido a Internet y vincularlo a páginas creadas por otras personas, te haces participante activo en la red mundial (World Wide Web). Por otro lado, "Hipertexto" se refiere a los enlaces que conectan las páginas web entre sí, ya sea dentro de un mismo sitio o entre diferentes.
-El atributo href que se utilizan dentro de los tag <a> o <link> por ejemplo, se usa para indicar la dirección a donde deberá llevar el link cuando el usuario haga click. Este atributo puede linkear tanto a páginas locales como a páginas externas en internet. Pero, aparte de esto, un link no necesariamente apunta siempre a una página diferente, sino que pueden usarse para direccionar a secciones dentro de una misma página, o bien estar vacío. Básicamente, esto es importante porque hay ocasiones en las que no queremos si o si dirigir a determinado “lugar” sino que debemos utilizar los vínculos para ejecutar alguna instrucción y no para dirigirnos a una página.
+El atributo href que se utilizan dentro de los tag &lt;a&gt; o &lt;link&gt; por ejemplo, se usa para indicar la dirección a donde deberá llevar el link cuando el usuario haga click. Este atributo puede linkear tanto a páginas locales como a páginas externas en internet. Pero, aparte de esto, un link no necesariamente apunta siempre a una página diferente, sino que pueden usarse para direccionar a secciones dentro de una misma página, o bien estar vacío. Básicamente, esto es importante porque hay ocasiones en las que no queremos si o si dirigir a determinado “lugar” sino que debemos utilizar los vínculos para ejecutar alguna instrucción y no para dirigirnos a una página.
 
 **4. ¿Cómo funcionan los tags audio y video?**
 
 Antes de HTML5, los archivos de audio y video solo se podían reproducir en un navegador con un complemento (como flash).
-El tag <audio> especifica una forma estándar de incrustar audio en una página web. El mismo puede contener:
+El tag &lt;audio&gt; especifica una forma estándar de incrustar audio en una página web. El mismo puede contener:
 * El atributo controls permitirá que el usuario controle la reproducción de audio, incluyendo volumen, búsqueda y pausar/reanudar reproducción.
-* El tag <src> (dentro del opening y closing tag) contiene la URL del audio que se va a insertar.
+* El tag &lt;src&gt; (dentro del opening y closing tag) contiene la URL del audio que se va a insertar.
 * Autoplay es un atributo booleano que hará que el sonido comience a reproducirse automáticamente en cuanto sea posible.
 * Buffered es un atributo que se puede leer para determinar qué intervalos de tiempo del multimedia se han almacenado en búfer. Este atributo contiene un objeto TimeRanges.
 * Preload error 548523. El objetivo de este atributo enumerado es proporcionar una sugerencia al navegador sobre qué cree el autor que proporcionará la mejor experiencia para el usuario.
-Luego, tenemos el tag <video> que básicamente funciona con los mismos atributos y tags que <audio> pero se agrega: 
+Luego, tenemos el tag &lt;video&gt; que básicamente funciona con los mismos atributos y tags que &lt;audio&gt; pero se agrega: 
 * Height: la altura del área de visualización del vídeo en píxeles CSS.
 * Loop: un atributo booleano; si se especifica, al alcanzar el final del video, volverá automáticamente al principio.
 * Width: la anchura del área de visualización del vídeo en píxeles CSS.
