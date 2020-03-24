@@ -16,15 +16,15 @@ Un atributo debe tener siempre:
 
 HTML, que significa Lenguaje de Marcado de Hipertextos (HyperText Markup Language), es la pieza más básica para la construcción de la web y se usa para definir el sentido y estructura del contenido en una página web. El conjunto mínimo de tags que debe tener toda página son los siguientes:
 
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Título de la página&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+    &lt;title&gt;Título de la página&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
  …   
-&lt;/body&gt;
-&lt;/html&gt;
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
 
 * La declaración DOCTYPE le avisa al browser que el documento que va a leer es HTML.
 * El texto entre &lt;html&gt; y &lt;/html&gt; define donde empieza y donde termina el documento HTML.
