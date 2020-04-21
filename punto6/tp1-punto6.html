@@ -6,7 +6,9 @@
 </head>
 <body>
 	<header>
+		<!-- ¿Es necesaria la sección? -->
 		<section>
+			<!-- ¿cual sería el titulo principal de la página? -->
 			<p><a href=""><img src="" alt="Municipalidad de Luján"></a></p>
 			<a href=""><img src="" alt="Facebook"></a>
 			<a href=""><img src="" alt="Youtube"></a>
@@ -16,6 +18,7 @@
 
 		<nav class="panel-menu">
 			<ul>
+				<!-- el tad li no tiene la propiedad scope -->
 				<li scope="col"><a href="">PORTADA</a></li>
 				<li scope="col"><a href="">LUJÁN</a></li>
 				<li scope="col"><a href="">MUNICIPALIDAD</a></li>
@@ -26,9 +29,10 @@
 				<li scope="col"><a href="" class="burger"><img src="" alt="Desplegar"></a></li>
 			</ul>
 		</nav>
-
+		<!-- esto se ve como en columnas, pero no es una tabla --> 
 		<table>
 			<tbody>
+				<!-- Si fuera una tabla les falta la fila <tr>  -->
 				<td>Eventos: &lt; &gt;</td>
 				<td>Fecha</td>
 				<td>Pronóstico</td>
@@ -37,14 +41,18 @@
 	</header><br>
 
 	<main>
+		<!-- No es una tabla -->
 		<table>
 			<td>&lt;</td>
 			<td>
+				<!-- es un articulo o una sección? -->
 				<article class="Noticia Central">
 					<header>
 						<time datetime="">fecha</time>
+						<!-- No puedo usar h2 si no está dentro de un h1 -->
 						<h2>Titulo</h2>
 					</header>
+					<!-- ¿Por qué es una imagen? -->
 					<img src="" alt="Noticia Central">
 					<p>Descripción</p>
 				</article>
@@ -120,6 +128,7 @@
 		<section class="carousel">
 			<ul>
 				<li>
+					<!-- por que estos son secction si venian usando articles? Semanticamente no serian parecidos a las novedades¿ -->
 					<section class="seccion-carousel">
 						<a href="">
 							<h3>Titulo de Seccion 1</h3>
@@ -264,8 +273,10 @@
 									<article class="Ultima_noticia">
 										<header>
 											<time datetime="">fecha</time>
+											<!-- este titulo depende del h2 no puedo saltearme el h3 -->
 											<a href=""><h4>Titulo</h4></a>
 										</header>
+										<!-- Pensaron si es una imagen con una descripción aparte o es una figura con su figcaption?  -->
 										<a href=""><img src="" alt="Ultima noticia 1"></a>
 										<p>Descripción</p>
 									</article>
@@ -505,10 +516,13 @@
 			<a href=""><img src="" alt="Youtube"></a>
 			<a href=""><img src="" alt="Instagram"></a>
 			<a href=""><img src="" alt="Telegram"></a>
+			<!-- Esta imagen es contenido o es decorativa? -->
 			<img src="">
+			<!-- Esto va suelto o iria dentro de algo -->
 			Pronóstico
 			Fecha
 		</section>
+		<!-- Esta seccion no seria una barra de navegación -->
 		<section>
 			<a href="">Portada</a>
 			<a href="">Luján</a>
@@ -517,6 +531,7 @@
 			<a href="">Servicios</a>
 			<a href="">Contacto</a>
 			<a href="" class="scroll-to-top"><img src="" alt="scroll-to-top"></a>
+			<!-- Esto debe ir al mismo nivel que los link de las secciones? falta algo -->
 			Municipalidad de Luján - Todos los derechos reservados - 2017
 		</section>
 	</footer>
